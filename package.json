@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "testcafe": "^1.3.3"
+    "testcafe": "^1.4.0"
   }
 }

@@ -1,6 +1,8 @@
-import { Selector } from 'testcafe'
+import { Selector } from 'testcafe';
+
 fixture `Getting started with TestCafe`
-.page`https://google.com`
+.page`https://www.superama.com.mx`
+
 .before(async t => {
     // Test setup goes here
 })
@@ -13,6 +15,12 @@ fixture `Getting started with TestCafe`
 })
 
 test ("first test", async t => {
-    await t.typeText(".A8SBwf","just testing");
-    await t.wait(2000)
+
+const inputField = Selector("input").withAttribute("placeholder", "¿Qué estás buscando?")
+
+
+    await t.click(inputField)
+    await t.typeText(inputField,"just testing");
+    await t.wait(2000);
+  //  await t.takeScreenshot();
 } )

@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome ./tests"
+    "test:chrome": "testcafe chrome ./tests --skip-js-errors",
+    "test:firefox": "testcafe firefox ./tests --skip-js-errors"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "testcafe": "^1.4.0"
+  },
+  "devDependencies": {
+    "testcafe": "*"
   }
 }

@@ -1,3 +1,5 @@
 {
-    "screenshotPath": "./screenshots/"
+    "screenshotPath": "./utils/screenshots",
+    "takeScreenshotsOnFails" : true,
+    "screenshotPathPattern" : "${DATE}_${FIXTURE}.png"
 }

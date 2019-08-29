@@ -9,12 +9,12 @@ fixture `Login tests`
     homePage.clickLogout();
   })
 
-test.skip('Login - Valid credentials - enter', async t => {
+test('Login - Valid credentials - enter', async t => {
   await homePage.clickLogin();
   await loginPage.loginFlow("juanfromqa@gmail.com", "Test1234!");
 })
 
-test.skip('Login [TTF] - Malformed email', async t => {
+test('Login [TTF] - Malformed email', async t => {
   await homePage.clickLogin();
   await loginPage.loginFlow("Nonexistent", "Test1234!");
   

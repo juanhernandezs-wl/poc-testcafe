@@ -13,16 +13,6 @@ class loginPage {
     // error messages
     this.errInvalidEmail = Selector("#UsuarioSup-error");
     this.errInvalidPassword = Selector("span.field-validation-error[data-valmsg-for='generalError']");
-    
-    /**
-     * TIPS
-     * another way to find the element above:
-     * this.errInvalidPassword  = Selector("span").withText("Correo o contraseña incorrectos.");
-     * 
-     * Using attributes
-     * this.form_submitButton  = Selector("input").withAttribute("value", "Send Message")
-     **/ 
-    
   }
 
   loginFlow = async (user, pass) => {

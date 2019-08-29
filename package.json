@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test:chrome": "testcafe chrome ./tests --skip-js-errors",
-    "test:firefox": "testcafe firefox ./tests --skip-js-errors"
+    "test:firefox": "testcafe firefox ./tests --skip-js-errors",
+    "test:chrome:5":"testcafe -c 5 chrome ./tests --skip-js-errors",
+    "test:multipleBrowsers": "testcafe chrome,firefox ./tests --skip-js-errors"
   },
   "author": "",
   "license": "ISC",
